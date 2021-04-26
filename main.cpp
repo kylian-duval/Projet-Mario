@@ -1,4 +1,10 @@
 #include <SFML/Graphics.hpp>
+#include <stdlib.h>
+#include <stdio.h>
+
+#include "jeu.h"
+#include "editeur.h"
+#include "constantes.h"
 
 
 int main(int argc, char **argv)
