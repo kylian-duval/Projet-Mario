@@ -9,37 +9,38 @@
 
 int main(int argc, char **argv)
 {
-	sf::Window window(sf::VideoMode(800, 600), "My window");
+	sf::RenderWindow window(sf::VideoMode(800, 600), "My window");
 
 	// on fait tourner le programme jusqu'à ce que la fenêtre soit fermée
+
+	//----------------------------phase test ---------------------------
+	sf::Texture texture;
+	if (!texture.loadFromFile("image/menu.jpg"))
+		return EXIT_FAILURE;
+	sf::Texture texture2;
+	if (!texture2.loadFromFile("image/mur.jpg"))
+		return EXIT_FAILURE;
+	sf::Sprite sprite(texture);
+	//-------------------------------------------------------------------------
 
 	while (window.isOpen())
 	{
 		// on inspecte tous les évènements de la fenêtre qui ont été émis depuis la précédente itération
 		sf::Event event;
+
 		while (window.pollEvent(event))
 		{
-			
-
-			sf::Text text;
-
-			
-
-			// choix de la chaîne de caractères à afficher
-			text.setString("Hello world");
-
-			// choix de la taille des caractères
-			text.setCharacterSize(24); // exprimée en pixels, pas en points !
-
-			// choix de la couleur du texte
-			text.setFillColor(sf::Color::Red);
-
-			// choix du style du texte
-			text.setStyle(sf::Text::Bold | sf::Text::Underlined);
 
 			// évènement "fermeture demandée" : on ferme la fenêtre
 			if (event.type == sf::Event::Closed)
 				window.close();
+		}
+
+		//----------------------------------------------
+		window.clear();
+		window.draw(sprite);
+		window.display();
+		//---------------------------------------------------
 		}
 	}
 
