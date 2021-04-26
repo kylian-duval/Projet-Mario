@@ -1,2 +1,2 @@
-#TargetFrameworkVersion=v4.0:PlatformToolSet=v141:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0.14393.0
-Debug|x64|C:\Users\kikid\Desktop\cour\c c++\C++\Projet-Mario\|
+PlatformToolSet=v142:VCToolArchitecture=Native32Bit:VCToolsVersion=14.28.29910:TargetPlatformVersion=10.0.19041.0:
+Debug|x64|C:\Users\louis\OneDrive\Documents\Mario_sokoban\Projet-Mario\|
