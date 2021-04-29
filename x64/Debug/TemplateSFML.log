@@ -1,2 +1,10 @@
 ﻿  main.cpp
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\main.cpp(42): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\main.cpp(48): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\main.cpp(55): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\main.cpp(62): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\main.cpp(68): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\main.cpp(74): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\main.cpp(80): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\main.cpp(86): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
   TemplateSFML.vcxproj -> C:\Users\kikid\Desktop\cour\c c++\C++\Projet-Mario\x64\Debug\TemplateSFML.exe
