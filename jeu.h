@@ -1,4 +1,3 @@
-
 if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
 	if (!Mario.loadFromFile("image/mario_haut.gif")) {
 		printf("imposible de charger mario haut");
@@ -51,4 +50,18 @@ else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
 }
 if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)){
 	menu = 0;
+}
+if (sprite_Mario.getPosition().x <= 0) {
+	sprite_Mario.setPosition(sf::Vector2f(0, sprite_Mario.getPosition().y));
+}
+if (sprite_Mario.getPosition().y <= 0) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, 0));
+}
+if (sprite_Mario.getPosition().x >= TailleFenetteAuteur) {
+	sprite_Mario.setPosition(sf::Vector2f(TailleFenetteAuteur-30, sprite_Mario.getPosition().y));
+	
+}
+if (sprite_Mario.getPosition().y >= TailleFenetteLargeur) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, TailleFenetteLargeur-30));
+	
 }

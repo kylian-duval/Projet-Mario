@@ -1,28 +1,38 @@
 #include <SFML/Graphics.hpp>
-//page de test
 #include <SFML/Window.hpp>
 #include <SFML/Audio.hpp>
+
 
 int main()
 {
 	//varioble-------------------------------------------------------------------------------------------------------------
 	int vitesseMario = 2; //récler le vitesse de déplacement de Mario
 	int menu = 0;
+	int TailleFenetteAuteur = 408; // reglage de la auteur de la  fennetre du jeu pas du menu
+	int TailleFenetteLargeur= 408; // reglage de la auteur de la  fennetre du jeu pas du menu
 	//----------------------------------------------------------------------------------------------------------------
 	// Create the main window
-	sf::RenderWindow window(sf::VideoMode(800, 600), "SFML window");
+	sf::RenderWindow window(sf::VideoMode(TailleFenetteAuteur, TailleFenetteLargeur), "SFML window");
 	window.setFramerateLimit(60);
+	sf::Texture Mur;
 	sf::Texture Mario;
 	sf::Sprite sprite_Mario;
+	
+	
+	
 	
 	if (!Mario.loadFromFile("image/mario_bas.gif")) {
 		printf("imposible de charger mario bas");
 	}
 	sprite_Mario.setTexture(Mario);
-	
-	
+
+	if (!Mur.loadFromFile("image/mur.jpg")) {
+		printf("imposible de charger le mur");
+	}
+
 	while (window.isOpen())
 	{
+		
 		// Process events
 		sf::Event event;
 		while (menu == 1)
@@ -31,6 +41,7 @@ int main()
 			// Clear screen
 			window.clear();
 			// Draw the sprite
+			#include "map.h";
 			window.draw(sprite_Mario);
 			// Update the window
 			window.display();
@@ -56,9 +67,9 @@ int main()
 			}
 
 			sf::Sprite sprite(texture);
-			sprite.setPosition(150, 75);
-			//sprite.setTextureRect(sf::IntRect(0, 0, 300, 300));
-			window.setSize(sf::Vector2u(500, 500));
+			sprite.setPosition(0,0);
+			
+
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad1))
 			{
 				menu = 1;
@@ -77,6 +88,8 @@ int main()
 			if (event.type == sf::Event::Closed)
 				window.close();
 		}
+		
+		
 	}
 
 }
