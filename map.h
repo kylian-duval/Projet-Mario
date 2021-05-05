@@ -67,75 +67,12 @@ sf::Sprite sprite_Mur12;
 sprite_Mur12.setTexture(Mur);
 sprite_Mur12.setPosition(sf::Vector2f(408, 0));
 window.draw(sprite_Mur12);
-sf::Sprite sprite_Mur;
-sprite_Mur.setTexture(Mur);
-sprite_Mur.setPosition(sf::Vector2f(0, 0));
-window.draw(sprite_Mur);
 
-sf::Sprite sprite_Mur1;
-sprite_Mur1.setTexture(Mur);
-sprite_Mur1.setPosition(sf::Vector2f(34, 0));
-window.draw(sprite_Mur1);
-
-sf::Sprite sprite_Mur2;
-sprite_Mur2.setTexture(Mur);
-sprite_Mur2.setPosition(sf::Vector2f(68, 0));
-window.draw(sprite_Mur2);
-
-sf::Sprite sprite_Mur3;
-sprite_Mur3.setTexture(Mur);
-sprite_Mur3.setPosition(sf::Vector2f(102, 0));
-window.draw(sprite_Mur3);
-
-sf::Sprite sprite_Mur4;
-sprite_Mur4.setTexture(Mur);
-sprite_Mur4.setPosition(sf::Vector2f(136, 0));
-window.draw(sprite_Mur4);
-
-sf::Sprite sprite_Mur5;
-sprite_Mur5.setTexture(Mur);
-sprite_Mur5.setPosition(sf::Vector2f(170, 0));
-window.draw(sprite_Mur5);
-
-sf::Sprite sprite_Mur6;
-sprite_Mur6.setTexture(Mur);
-sprite_Mur6.setPosition(sf::Vector2f(204, 0));
-window.draw(sprite_Mur6);
-
-sf::Sprite sprite_Mur7;
-sprite_Mur7.setTexture(Mur);
-sprite_Mur7.setPosition(sf::Vector2f(238, 0));
-window.draw(sprite_Mur7);
-
-sf::Sprite sprite_Mur8;
-sprite_Mur8.setTexture(Mur);
-sprite_Mur8.setPosition(sf::Vector2f(272, 0));
-window.draw(sprite_Mur8);
-
-sf::Sprite sprite_Mur9;
-sprite_Mur9.setTexture(Mur);
-sprite_Mur9.setPosition(sf::Vector2f(306, 0));
-window.draw(sprite_Mur9);
-
-sf::Sprite sprite_Mur10;
-sprite_Mur10.setTexture(Mur);
-sprite_Mur10.setPosition(sf::Vector2f(340, 0));
-window.draw(sprite_Mur10);
-
-sf::Sprite sprite_Mur11;
-sprite_Mur11.setTexture(Mur);
-sprite_Mur11.setPosition(sf::Vector2f(374, 0));
-window.draw(sprite_Mur11);
-
-sf::Sprite sprite_Mur12;
-sprite_Mur12.setTexture(Mur);
-sprite_Mur12.setPosition(sf::Vector2f(408, 0));
-window.draw(sprite_Mur12);
 /* -----------------------------------------------------------------------------------------
 
 2er ligne
 
-*/
+---------------------------------------------------------------------------------------------*/
 sf::Sprite sprite_Mur13;
 sprite_Mur13.setTexture(Mur);
 sprite_Mur13.setPosition(sf::Vector2f(0, 34));
