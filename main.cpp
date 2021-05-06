@@ -1,6 +1,7 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/Audio.hpp>
+#include <math.h>
 
 
 int main()
@@ -10,6 +11,13 @@ int main()
 	int menu = 0;
 	int TailleFenetteAuteur = 408; // reglage de la auteur de la  fennetre du jeu pas du menu
 	int TailleFenetteLargeur= 408; // reglage de la auteur de la  fennetre du jeu pas du menu
+	/*
+	1 = mario haut
+	2 = mario bas
+	3 = mario gauche
+	4 = mario droite
+	*/
+	int rotation = 1;
 	//----------------------------------------------------------------------------------------------------------------
 	// Create the main window
 	sf::RenderWindow window(sf::VideoMode(TailleFenetteAuteur, TailleFenetteLargeur), "SFML window");
@@ -19,6 +27,8 @@ int main()
 	sf::Sprite sprite_Mario;
 	sf::Texture sol;
 	sf::Texture objectif;
+	sf::Texture cesse;
+	sf::Sprite sprite_cesse;
 	
 	
 	
@@ -29,42 +39,44 @@ int main()
 	if (!sol.loadFromFile("image/herbe.jpg")) {
 		printf("impossible de charger le sol");
 	}
-	if (!objectif.loadFromFile("image/objectif.png")) {
+	if (!objectif.loadFromFile("image/canabis.png")) {
 		printf("impossible de charger l'objectif");
 	}
 	if (!Mur.loadFromFile("image/mur.jpg")) {
 		printf("imposible de charger le mur");
 	}
 
+	if (!cesse.loadFromFile("image/caisse.jpg")) {
+		printf("imposible de charger la cesse");
+	}
+	sprite_cesse.setTexture(cesse);
+	sprite_cesse.setPosition(sf::Vector2f(68, 68));
 
 	while (window.isOpen())
 	{
-		
+
 		// Process events
 		sf::Event event;
 		while (menu == 1)
 		{
-			#include "jeu.h";
-			// Clear screen
+		#include "jeu.h";
+
+
+
 			window.clear();
-			// Draw the sprite
 			#include "map.h";
+			window.draw(sprite_cesse);
 			window.draw(sprite_Mario);
-			// Update the window
+
 			window.display();
+
+			while (window.pollEvent(event))
+			{
+				if (event.type == sf::Event::Closed)
+					window.close();
+			}
 		}
 
-		while (window.pollEvent(event))
-		{
-			if (event.type == sf::Event::Closed)
-				window.close();
-		}
-		// Clear screen
-		window.clear();
-		// Draw the sprite
-		window.draw(sprite_Mario);
-		// Update the window
-		window.display();
 
 		while (menu == 0) {
 			sf::Texture texture;
@@ -74,29 +86,25 @@ int main()
 			}
 
 			sf::Sprite sprite(texture);
-			sprite.setPosition(0,0);
-			
+			sprite.setPosition(0, 0);
+
 
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad1))
 			{
 				menu = 1;
 			}
-		
+
 			window.clear();
 			// Draw the sprite
 			window.draw(sprite);
 			// Update the window
 			window.display();
+			while (window.pollEvent(event))
+			{
+				if (event.type == sf::Event::Closed)
+					window.close();
+			}
 
 		}
-
-		while (window.pollEvent(event))
-		{
-			if (event.type == sf::Event::Closed)
-				window.close();
-		}
-		
-		
 	}
-
 }
