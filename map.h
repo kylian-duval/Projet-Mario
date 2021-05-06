@@ -355,54 +355,59 @@ sprite_Mur65.setPosition(sf::Vector2f(0, 170));
 window.draw(sprite_Mur65);
 
 sf::Sprite sprite_Mur66;
-sprite_Mur66.setTexture(Mur);
+sprite_Mur66.setTexture(sol);
 sprite_Mur66.setPosition(sf::Vector2f(34, 170));
 window.draw(sprite_Mur66);
 
-sf::Sprite sprite_Mur67;
-sprite_Mur67.setTexture(Mur);
-sprite_Mur67.setPosition(sf::Vector2f(68, 170));
-window.draw(sprite_Mur67);
+sf::Sprite sprite_sol1;
+sprite_sol1.setTexture(sol);
+sprite_sol1.setPosition(sf::Vector2f(68, 170));
+window.draw(sprite_sol1);
 
 sf::Sprite sprite_Mur68;
-sprite_Mur68.setTexture(Mur);
+sprite_Mur68.setTexture(sol);
 sprite_Mur68.setPosition(sf::Vector2f(102, 170));
 window.draw(sprite_Mur68);
 
 sf::Sprite sprite_Mur69;
-sprite_Mur69.setTexture(Mur);
+sprite_Mur69.setTexture(sol);
 sprite_Mur69.setPosition(sf::Vector2f(136, 170));
 window.draw(sprite_Mur69);
 
 sf::Sprite sprite_Mur70;
-sprite_Mur70.setTexture(Mur);
+sprite_Mur70.setTexture(sol);
 sprite_Mur70.setPosition(sf::Vector2f(170, 170));
 window.draw(sprite_Mur70);
 
 sf::Sprite sprite_Mur71;
-sprite_Mur71.setTexture(Mur);
+sprite_Mur71.setTexture(sol);
 sprite_Mur71.setPosition(sf::Vector2f(204, 170));
 window.draw(sprite_Mur71);
 
 sf::Sprite sprite_Mur72;
-sprite_Mur72.setTexture(Mur);
+sprite_Mur72.setTexture(sol);
 sprite_Mur72.setPosition(sf::Vector2f(238, 170));
 window.draw(sprite_Mur72);
 
 sf::Sprite sprite_Mur73;
-sprite_Mur73.setTexture(Mur);
+sprite_Mur73.setTexture(sol);
 sprite_Mur73.setPosition(sf::Vector2f(272, 170));
 window.draw(sprite_Mur73);
 
 sf::Sprite sprite_Mur74;
-sprite_Mur74.setTexture(Mur);
+sprite_Mur74.setTexture(sol);
 sprite_Mur74.setPosition(sf::Vector2f(306, 170));
 window.draw(sprite_Mur74);
 
 sf::Sprite sprite_Mur75;
-sprite_Mur75.setTexture(Mur);
+sprite_Mur75.setTexture(sol);
 sprite_Mur75.setPosition(sf::Vector2f(340, 170));
 window.draw(sprite_Mur75);
+
+sf::Sprite sprite_objectif;
+sprite_objectif.setTexture(objectif);
+sprite_objectif.setPosition(sf::Vector2f(340, 170));
+window.draw(sprite_objectif);
 
 sf::Sprite sprite_Mur76;
 sprite_Mur76.setTexture(Mur);

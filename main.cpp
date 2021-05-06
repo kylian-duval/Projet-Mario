@@ -17,7 +17,8 @@ int main()
 	sf::Texture Mur;
 	sf::Texture Mario;
 	sf::Sprite sprite_Mario;
-	
+	sf::Texture sol;
+	sf::Texture objectif;
 	
 	
 	
@@ -25,10 +26,16 @@ int main()
 		printf("imposible de charger mario bas");
 	}
 	sprite_Mario.setTexture(Mario);
-
+	if (!sol.loadFromFile("image/herbe.jpg")) {
+		printf("impossible de charger le sol");
+	}
+	if (!objectif.loadFromFile("image/objectif.png")) {
+		printf("impossible de charger l'objectif");
+	}
 	if (!Mur.loadFromFile("image/mur.jpg")) {
 		printf("imposible de charger le mur");
 	}
+
 
 	while (window.isOpen())
 	{
