@@ -27,8 +27,10 @@ int main()
 	sf::Sprite sprite_Mario;
 	sf::Texture sol;
 	sf::Texture objectif;
-	sf::Texture cesse;
-	sf::Sprite sprite_cesse;
+	sf::Texture caisse;
+	sf::Sprite sprite_caisse;
+
+	//sf::Sprite sprite_Mur;
 	
 	
 	
@@ -46,26 +48,32 @@ int main()
 		printf("imposible de charger le mur");
 	}
 
-	if (!cesse.loadFromFile("image/caisse.jpg")) {
+	if (!caisse.loadFromFile("image/caisse.jpg")) {
 		printf("imposible de charger la cesse");
 	}
-	sprite_cesse.setTexture(cesse);
-	sprite_cesse.setPosition(sf::Vector2f(68, 68));
+	sprite_caisse.setTexture(caisse);
+	//sprite_Mur.setTexture(Mur);
+
+	//sprite_cesse.setPosition(sf::Vector2f(102, 170));
 
 	while (window.isOpen())
 	{
 
 		// Process events
 		sf::Event event;
+		sprite_caisse.setPosition(102, 170);
+		sprite_Mario.setPosition(34,170);
 		while (menu == 1)
 		{
-		#include "jeu.h";
+		#include "jeu.cpp";
 
 
 
 			window.clear();
-			#include "map.h";
-			window.draw(sprite_cesse);
+			#include "map.cpp";
+			window.draw(sprite_caisse);
+
+			
 			window.draw(sprite_Mario);
 
 			window.display();

@@ -1,3 +1,7 @@
+#include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
+#include <SFML/Audio.hpp>
+#include <math.h>
 /* -----------------------------------------------------------------------------------------
 
 1er ligne
@@ -832,3 +836,11 @@ sf::Sprite sprite_Mur155;
 sprite_Mur155.setTexture(Mur);
 sprite_Mur155.setPosition(sf::Vector2f(408, 374));
 window.draw(sprite_Mur155);
+
+/*if (sprite_Mario.getPosition().x == sprite_Mur65) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur65 - 30));
+}
+if (sprite_Mario.getPosition().y == sprite_Mur65) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur65 - 30));
+
+}*/
