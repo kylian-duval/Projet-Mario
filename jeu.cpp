@@ -72,13 +72,7 @@ if (sprite_Mario.getPosition().y >= TailleFenetteLargeur) {
 	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, TailleFenetteLargeur-30));
 	
 }
-/*if (sprite_Mario.getPosition().x == sprite_Mur65) {
-	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur65 - 30));
-}
-if (sprite_Mario.getPosition().y == sprite_Mur65) {
-	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur65 - 30));
 
-}*/
 
 if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_caisse.getPosition().x + 17)) < 34) &&
 (std::abs((sprite_Mario.getPosition().y + 17) - (sprite_caisse.getPosition().y + 17)) < 34))

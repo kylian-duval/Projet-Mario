@@ -114,5 +114,37 @@ int main()
 			}
 
 		}
+		while (menu == 2) {
+			sf::Texture gg;
+			if (!gg.loadFromFile("image/gg.jpg"))
+			{
+				return EXIT_FAILURE;
+			}
+
+			sf::Sprite sprite_gg(gg);
+			sprite_gg.setPosition(0, 0);
+
+			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
+				menu = 0;
+			}
+
+
+			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad1))
+			{
+				menu = 1;
+			}
+
+			window.clear();
+			// Draw the sprite
+			window.draw(sprite_gg);
+			// Update the window
+			window.display();
+			while (window.pollEvent(event))
+			{
+				if (event.type == sf::Event::Closed)
+					window.close();
+			}
+
+		}
 	}
 }

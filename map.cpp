@@ -1,7 +1,4 @@
-#include <SFML/Graphics.hpp>
-#include <SFML/Window.hpp>
-#include <SFML/Audio.hpp>
-#include <math.h>
+
 /* -----------------------------------------------------------------------------------------
 
 1er ligne
@@ -837,10 +834,238 @@ sprite_Mur155.setTexture(Mur);
 sprite_Mur155.setPosition(sf::Vector2f(408, 374));
 window.draw(sprite_Mur155);
 
-/*if (sprite_Mario.getPosition().x == sprite_Mur65) {
-	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur65 - 30));
-}
-if (sprite_Mario.getPosition().y == sprite_Mur65) {
-	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur65 - 30));
+/*------------------------------------------------------------------------------------------------------------------------------
 
-}*/
+	gention des colision ligne du haut de Mario
+
+---------------------------------------------------------------------------------------------------------------------------*/
+
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur53.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur53.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur53.getPosition().y + 34));
+}
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur54.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur54.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur54.getPosition().y + 34));
+}
+
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur55.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur55.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur55.getPosition().y + 34));
+}
+
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur56.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur56.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur56.getPosition().y + 34));
+}
+
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur57.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur57.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur57.getPosition().y + 34));
+}
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur58.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur58.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur58.getPosition().y + 34));
+}
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur59.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur59.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur59.getPosition().y + 34));
+}
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur60.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur60.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur60.getPosition().y + 34));
+}
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur61.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur61.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur61.getPosition().y + 34));
+}
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur62.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur62.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur62.getPosition().y + 34));
+}
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur63.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur63.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur63.getPosition().y + 34));
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------
+
+	gention des colision de la ligne au dessu  de la caisse
+
+---------------------------------------------------------------------------------------------------------------------------*/
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur53.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur53.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, sprite_Mur53.getPosition().y + 34));
+}
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur54.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur54.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, sprite_Mur54.getPosition().y + 34));
+}
+
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur55.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur55.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, sprite_Mur55.getPosition().y + 34));
+}
+
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur56.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur56.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, sprite_Mur56.getPosition().y + 34));
+}
+
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur57.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur57.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, sprite_Mur57.getPosition().y + 34));
+}
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur58.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur58.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, sprite_Mur58.getPosition().y + 34));
+}
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur59.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur59.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, sprite_Mur59.getPosition().y + 34));
+}
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur60.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur60.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, sprite_Mur60.getPosition().y + 34));
+}
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur61.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur61.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, sprite_Mur61.getPosition().y + 34));
+}
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur62.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur62.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, sprite_Mur62.getPosition().y + 34));
+}
+
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur63.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur63.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, sprite_Mur63.getPosition().y + 34));
+}
+/*------------------------------------------------------------------------------------------------------------------------------
+
+	gention des colision ligne du milieu ligne de mario
+
+---------------------------------------------------------------------------------------------------------------------------*/
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur65.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur65.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mur66.getPosition().x, sprite_Mur66.getPosition().y));
+	
+}
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur76.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur76.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_objectif.getPosition().x, sprite_objectif.getPosition().y));
+}
+/*------------------------------------------------------------------------------------------------------------------------------
+
+	gention des colision ligne du milieur de la cesse
+
+---------------------------------------------------------------------------------------------------------------------------*/
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur65.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur65.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_Mur66.getPosition().x, sprite_Mur66.getPosition().y));
+
+}
+
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur76.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur76.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_objectif.getPosition().x, sprite_objectif.getPosition().y));
+
+}
+/*------------------------------------------------------------------------------------------------------------------------------
+
+	gention des colision ligne du bas de mario
+
+---------------------------------------------------------------------------------------------------------------------------*/
+
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur79.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur79.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur79.getPosition().y - 34));
+}
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur80.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur80.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur80.getPosition().y - 34));
+}
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur81.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur81.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur81.getPosition().y - 34));
+}
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur82.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur82.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur82.getPosition().y - 34));
+}
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur83.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur83.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur83.getPosition().y - 34));
+}
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur84.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur84.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur84.getPosition().y - 34));
+}
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur85.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur85.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur85.getPosition().y - 34));
+}
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur86.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur86.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur86.getPosition().y - 34));
+}
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur87.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur87.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur87.getPosition().y - 34));
+}
+if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_Mur88.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_Mario.getPosition().y + 17) - (sprite_Mur88.getPosition().y + 17)) < 34)) {
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, sprite_Mur88.getPosition().y - 34));
+}
+/*------------------------------------------------------------------------------------------------------------------------------
+
+	gention des colision ligne du bas de la cesse
+
+---------------------------------------------------------------------------------------------------------------------------*/
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur79.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur79.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, sprite_Mur79.getPosition().y - 34));
+}
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur80.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur80.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, sprite_Mur80.getPosition().y - 34));
+}
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur81.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur81.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, sprite_Mur81.getPosition().y - 34));
+}
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur82.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur82.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, sprite_Mur82.getPosition().y - 34));
+}
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur83.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur83.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, sprite_Mur83.getPosition().y - 34));
+}
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur84.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur84.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, sprite_Mur84.getPosition().y - 34));
+}
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur85.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur85.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, sprite_Mur85.getPosition().y - 34));
+}
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur86.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur86.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, sprite_Mur86.getPosition().y - 34));
+}
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur87.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur87.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, sprite_Mur87.getPosition().y - 34));
+}
+if ((std::abs((sprite_caisse.getPosition().x + 17) - (sprite_Mur88.getPosition().x + 17)) < 34) &&
+(std::abs((sprite_caisse.getPosition().y + 17) - (sprite_Mur88.getPosition().y + 17)) < 34)) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, sprite_Mur88.getPosition().y - 34));
+}
+/*---------------------------------------------------------------------------------------------------------------------
+vérifi sur la cesse est sur l'objetif
+-----------------------------------------------------------------------------------------------------------------------*/
+if ((std::abs((sprite_caisse.getPosition().x) == (sprite_objectif.getPosition().x))) &&
+(std::abs((sprite_caisse.getPosition().y) == (sprite_objectif.getPosition().y )))) {
+	menu = 2;
+}
