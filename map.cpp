@@ -1067,5 +1067,11 @@ vérifi sur la cesse est sur l'objetif
 -----------------------------------------------------------------------------------------------------------------------*/
 if ((std::abs((sprite_caisse.getPosition().x) == (sprite_objectif.getPosition().x))) &&
 (std::abs((sprite_caisse.getPosition().y) == (sprite_objectif.getPosition().y )))) {
+	if (!audio.loadFromFile("Audio/vampire_mario.wav"))
+	{
+		printf("inposiible de charger le fichier audio");
+	}
+	Sounde_audio.setBuffer(audio);
+	Sounde_audio.play();
 	menu = 2;
 }
