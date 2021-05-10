@@ -9,6 +9,7 @@ if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
 if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
 	if (!Mario.loadFromFile("image/mario_bas.gif")) {
 		printf("imposible de charger mario bas");
+		printf("%d", sprite_Mario.getPosition().x);
 	}
 	rotation = 1;
 	sprite_Mario.move(0, vitesseMario);
@@ -64,14 +65,40 @@ if (sprite_Mario.getPosition().x <= 0) {
 if (sprite_Mario.getPosition().y <= 0) {
 	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, 0));
 }
-if (sprite_Mario.getPosition().x >= TailleFenetteAuteur) {
-	sprite_Mario.setPosition(sf::Vector2f(TailleFenetteAuteur-30, sprite_Mario.getPosition().y));
-	
+
+if (sprite_Mario.getPosition().x > 374)
+{
+	sprite_Mario.setPosition(sf::Vector2f(374, sprite_Mario.getPosition().y));
 }
-if (sprite_Mario.getPosition().y >= TailleFenetteLargeur) {
-	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, TailleFenetteLargeur-30));
-	
+
+if (sprite_Mario.getPosition().y > 374)
+{
+	sprite_Mario.setPosition(sf::Vector2f(sprite_Mario.getPosition().x, 374));
 }
+
+
+if (sprite_caisse.getPosition().x <= 0) {
+	sprite_caisse.setPosition(sf::Vector2f(0, sprite_caisse.getPosition().y));
+}
+if (sprite_caisse.getPosition().y <= 0) {
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, 0));
+}
+if (sprite_Mario.getPosition().x > 374)
+{
+	sprite_caisse.setPosition(sf::Vector2f(374, sprite_caisse.getPosition().y));
+}
+
+if (sprite_Mario.getPosition().y > 374)
+{
+	sprite_caisse.setPosition(sf::Vector2f(sprite_caisse.getPosition().x, 374));
+}
+
+
+
+
+
+
+
 
 
 if ((std::abs((sprite_Mario.getPosition().x + 17) - (sprite_caisse.getPosition().x + 17)) < 34) &&

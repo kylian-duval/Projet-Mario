@@ -18,8 +18,7 @@ int main()
 	4 = mario droite
 	*/
 	int rotation = 1;
-	//----------------------------------------------------------------------------------------------------------------
-	// Create the main window
+	//------------------------------------------------------------------------------------------------------------------------------
 	sf::RenderWindow window(sf::VideoMode(TailleFenetteAuteur, TailleFenetteLargeur), "SFML window");
 	window.setFramerateLimit(60);
 	sf::Texture Mur;
@@ -33,7 +32,7 @@ int main()
 	sf::Sound Sounde_audio;
 
 
-	//sf::Sprite sprite_Mur;
+	
 	
 	
 	
@@ -55,9 +54,7 @@ int main()
 		printf("imposible de charger la cesse");
 	}
 	sprite_caisse.setTexture(caisse);
-	//sprite_Mur.setTexture(Mur);
-
-	//sprite_cesse.setPosition(sf::Vector2f(102, 170));
+	
 
 	while (window.isOpen())
 	{
@@ -113,6 +110,18 @@ int main()
 				menu = 1;
 			}
 
+
+			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad2))
+			{
+				if (!audio.loadFromFile("Audio/drm64_mario5.wav"))
+				{
+					printf("inposiible de charger le fichier audio");
+				}
+				Sounde_audio.setBuffer(audio);
+				Sounde_audio.play();
+				menu = 3;
+			}
+
 			window.clear();
 			// Draw the sprite
 			window.draw(sprite);
@@ -136,7 +145,7 @@ int main()
 			sprite_gg.setPosition(0, 0);
 
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
-				menu = 0;
+				menu = 3;
 			}
 
 
@@ -162,6 +171,25 @@ int main()
 					window.close();
 			}
 
+		}
+		while (menu == 3)
+		{
+			#include "jeu.cpp";
+
+			window.clear();
+
+			window.draw(sprite_caisse);
+
+
+			window.draw(sprite_Mario);
+
+			window.display();
+
+			while (window.pollEvent(event))
+			{
+				if (event.type == sf::Event::Closed)
+					window.close();
+			}
 		}
 	}
 }
