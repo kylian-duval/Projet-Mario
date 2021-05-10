@@ -29,6 +29,9 @@ int main()
 	sf::Texture objectif;
 	sf::Texture caisse;
 	sf::Sprite sprite_caisse;
+	sf::SoundBuffer audio;
+	sf::Sound Sounde_audio;
+
 
 	//sf::Sprite sprite_Mur;
 	
@@ -63,6 +66,8 @@ int main()
 		sf::Event event;
 		sprite_caisse.setPosition(102, 170);
 		sprite_Mario.setPosition(34,170);
+		
+		
 		while (menu == 1)
 		{
 		#include "jeu.cpp";
@@ -99,6 +104,12 @@ int main()
 
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad1))
 			{
+				if (!audio.loadFromFile("Audio/drm64_mario5.wav"))
+				{
+					printf("inposiible de charger le fichier audio");
+				}
+				Sounde_audio.setBuffer(audio);
+				Sounde_audio.play();
 				menu = 1;
 			}
 
@@ -131,6 +142,12 @@ int main()
 
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Numpad1))
 			{
+				if (!audio.loadFromFile("Audio/drm64_mario5.wav"))
+				{
+					printf("imposible de charger le fichier audio");
+				}
+				Sounde_audio.setBuffer(audio);
+				Sounde_audio.play();
 				menu = 1;
 			}
 
