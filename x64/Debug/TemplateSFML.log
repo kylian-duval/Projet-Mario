@@ -1,5 +1,5 @@
 ﻿  main.cpp
-c:\users\kikid\desktop\cour\c c++\c++\projet-mario\main.cpp(70): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\main.cpp(78): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
 c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(7): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
 c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(12): warning C4477: 'printf' : la chaîne de format '%d' nécessite un argument de type 'int', mais l'argument variadique 1 est de type 'double'
 c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(15): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
@@ -9,12 +9,16 @@ c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(36): warning C4244: '
 c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(43): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
 c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(50): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
 c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(57): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(108): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(111): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(114): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(117): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-c:\users\kikid\desktop\cour\c c++\c++\projet-mario\main.cpp(75): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
-c:\users\kikid\desktop\cour\c c++\c++\projet-mario\main.cpp(177): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(126): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(129): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(132): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(135): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(145): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(148): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(151): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(154): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\main.cpp(83): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\main.cpp(185): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
 c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(7): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
 c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(12): warning C4477: 'printf' : la chaîne de format '%d' nécessite un argument de type 'int', mais l'argument variadique 1 est de type 'double'
 c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(15): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
@@ -24,8 +28,12 @@ c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(36): warning C4244: '
 c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(43): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
 c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(50): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
 c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(57): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(108): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(111): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(114): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(117): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(126): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(129): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(132): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(135): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(145): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(148): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(151): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+c:\users\kikid\desktop\cour\c c++\c++\projet-mario\jeu.cpp(154): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
   TemplateSFML.vcxproj -> C:\Users\kikid\Desktop\cour\c c++\C++\Projet-Mario\x64\Debug\TemplateSFML.exe

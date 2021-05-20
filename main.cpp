@@ -17,13 +17,16 @@ int main()
 	3 = mario gauche
 	4 = mario droite
 	*/
-	int rotation = 1;
+	int rotationMario = 1;
+	int rotationlougis = 1;
 	//------------------------------------------------------------------------------------------------------------------------------
 	sf::RenderWindow window(sf::VideoMode(TailleFenetteAuteur, TailleFenetteLargeur), "SFML window");
 	window.setFramerateLimit(60);
 	sf::Texture Mur;
 	sf::Texture Mario;
+	sf::Texture lougis;
 	sf::Sprite sprite_Mario;
+	sf::Sprite sprite_lougis;
 	sf::Texture sol;
 	sf::Texture objectif;
 	sf::Texture caisse;
@@ -54,6 +57,11 @@ int main()
 		printf("imposible de charger la cesse");
 	}
 	sprite_caisse.setTexture(caisse);
+
+	if (!lougis.loadFromFile("image/lougis_bas.png")) {
+		printf("imposible de charger louigi bas");
+	}
+	sprite_lougis.setTexture(lougis);
 	
 
 	while (window.isOpen())
@@ -182,6 +190,7 @@ int main()
 
 
 			window.draw(sprite_Mario);
+			window.draw(sprite_lougis);
 
 			window.display();
 
